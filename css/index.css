@@ -2,5 +2,32 @@ img {
   border: 1px solid black;
   margin: 0 auto;
   display: block;
-  width: 600px;
+  width: 400px;
+}
+
+#all {
+  display: none;
+}
+
+#contact {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  color: white;
+  font-size: 26px;
+  display: none;  
+}
+
+#contact > a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+
+.some-coffee {
+  font-size: 40px;
+  text-align: center;
 }
