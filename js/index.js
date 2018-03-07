@@ -1,25 +1,30 @@
-(function() {
+(function () {
   var rightHand = document.getElementById("rightHand");
   var leftHand = document.getElementById("leftHand");
   var image = document.getElementById("image");
+  var all = document.getElementById("all");
+  var contact = document.getElementById("contact");
 
-  rightHand.onclick = function() {
-    image.src = "img/rightHand.png";
-    leftHand.onclick = function() {
-      image.src = "img/non.png";
-      alert("It's enough for today!");
-      alert("Get back to work!");
-    };
-    rightHand.onclick = null;
+  rightHand.onclick = function () {
+    image.src = "img/nooooooooooo.png";
+    all.style.display = "block";
+    rightHand.style.display = "none";
+    leftHand.style.display = "none";
   };
-  
-  leftHand.onclick = function() {
-    image.src = "img/leftHand.png";
-    rightHand.onclick = function() {
-      image.src = "img/non.png";
-      alert("It's enough for today!");
-      alert("Get back to work!");
-    };
-    leftHand.onclick = null;
+
+  all.onclick = function () {
+    image.src = "img/choose.png";
+    all.style.display = "none";    
+    contact.style.display = "none";   
+    leftHand.style.display = "block";
+    rightHand.style.display = "block";           
+  };
+
+  leftHand.onclick = function () {
+    image.src = "img/yes.png";
+    contact.style.display = "block";
+    all.style.display = "block";
+    rightHand.style.display = "none";
+    leftHand.style.display = "none";
   };
 })();
